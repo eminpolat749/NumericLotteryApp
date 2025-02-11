@@ -40,9 +40,13 @@ public class NumericLotteryApp {
         }
 
         NumericLottery nl = new NumericLottery(arr);
+
         if (nl.check())
             System.out.println("Tebrikler sayısal lotoyu kazandınız...");
         else
             System.out.println("Tekrar deneyiniz...");
+
+        nl.printLottery();
+        nl.printResult();
     }
 }
